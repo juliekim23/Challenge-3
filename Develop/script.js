@@ -1,22 +1,38 @@
 // Assignment code here
+var start = window.prompt ("How many characters would you like your password to contain?")
+if (start === " " || start < 8 || start > 128) {
+    window.prompt("Password must be 8 - 128 characters.");
+    start;
+  }
 
+
+lowerCase = window.confirm("Include lower-case characters?")
+upperCase = window.confirm("Include upper-case characters?")
+specialC = window.confirm("Include special characters?")
+numbers = window.confirm("Include numbers?")
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
+
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
+  var password = generatePassword() 
+  generatePassword() {
+
+  }
+  };
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
+  
 }
 
+writePassword()
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-window.prompt ("How many characters would you like your password to contain?")
+
 
 // Array of special characters to be included in password
 var specialCharacters = [
