@@ -34,6 +34,8 @@ function writePassword() {
   function generatePassword () {
     var index = Math.floor(Math.random() * all.length);
     var choice = all[index];
+
+
     //repeat for start.length
 
     if (!lowerCase){
@@ -64,7 +66,7 @@ generateBtn.addEventListener("click", writePassword);
 
 
 
-//Arrays
+//Array
 var all = [specialCharacters + lowerCasedCharacters + upperCasedCharacters + numericCharacters]
 
 // Array of special characters to be included in password
